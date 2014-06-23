@@ -2,7 +2,7 @@
 
 # Copyright (c) 2014 Leonard Wu <leonard.wu92@alumni.ic.ac.uk>
 # MIT License
-# Android SQLite DB Pull (adb-db-pull, v1.0)
+# Android SQLite DB Pull (adb-db-pull, v1.1)
 # https://github.com/leonardw/adb-db-pull.git
 
 ADB=`which adb`
@@ -40,7 +40,7 @@ fi;
 # One arg, try list all DBs under given package
 if [ $# -eq 1 ]
 then
-    cmd_list_db="$ADB_SHELL 'run-as $1 ls /data/data/$1/databases/' "
+    cmd_list_db="$ADB_SHELL 'ls /data/data/$1/databases/' "
     echo ""
     echo "SQLite DBs found under $1 on device:"
     eval $cmd_list_db
