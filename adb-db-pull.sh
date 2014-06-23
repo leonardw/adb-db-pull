@@ -2,11 +2,11 @@
 
 # Copyright (c) 2014 Leonard Wu <leonard.wu92@alumni.ic.ac.uk>
 # MIT License
-# Android SQLite DB Pull (adb-db-pull, v1.1)
+# Android SQLite DB Pull (adb-db-pull, v1.2)
 # https://github.com/leonardw/adb-db-pull.git
 
 ADB=`which adb`
-ADB_SHELL="$ADB -e shell"
+ADB_SHELL="$ADB shell"
 SELF=`basename $0`
 DEST_DIR="./"
 
@@ -19,7 +19,7 @@ fi;
 if [ $# -ne 2 ]
 then
     echo "Usage: $SELF [PACKAGE.NAME [DB_FILE]]"
-    echo "eg. $SELF com.android.providers.contacts contacts.db"
+    echo "eg. $SELF com.mydomain.myapp names.db"
 fi;
 # Quit if more than max num of args
 if [ $# -gt 2 ]
