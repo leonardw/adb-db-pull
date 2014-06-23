@@ -57,7 +57,7 @@ com.mydomain.myapp
 List all SQLite databases under a specified package, on a running Android device connected via ADB
 ```sh
 $ adb-db-pull.sh com.mydomain.myapp
-SQLite DBs found under com.android.providers.contacts on device:
+SQLite DBs found under com.mydomain.myapp on device:
 names.db
 names.db-journal
 profile.db
