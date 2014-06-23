@@ -1,6 +1,9 @@
 # Android SQLite DB Pull (adb-db-pull)
 
-Shell script to facilitate pulling of SQLite DBs on an Android (virtual) device directly to a connected computer, via ADB.
+Shell script to pull SQLite DBs on an Android (virtual) device directly to a connected computer, via ADB.
+
+The pulled DB file may then be opened and examined using any of the SQLite tools running on the computer.
+
 
 Features:
 * List all packages on Android device that have a SQLite database
@@ -8,7 +11,7 @@ Features:
 * Copy a specified SQLite DB file from Android device to current local directory on computer
 
 
-## Prerequisites
+Prerequisites:
 
 * A computer runing *nix (Linux, Mac OSX, etc)
 * ADB (part of Android SDK) must be installed on computer
