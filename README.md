@@ -24,6 +24,8 @@ Prerequisites:
 Copy the shell script into a directory on your PATH, e.g., `/usr/local/bin`
 
 ```sh
+$ git clone https://github.com/leonardw/adb-db-pull.git
+$ cd adb-db-pull
 $ cp ./adb-db-pull.sh /usr/local/bin/
 $ chmod +x /usr/local/bin/adb-db-pull.sh
 ``` 
